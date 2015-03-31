@@ -1,0 +1,42 @@
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42\PuTTYSessionManager\bin\Debug\PuTTY Session Manager.exe.config
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\bin\Debug\changelog.txt
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\bin\Debug\FileHelpers-LGPL.txt
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\bin\Debug\gpl.txt
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\bin\Debug\KiTTY Session Manager.exe.config
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\bin\Debug\KiTTY Session Manager.exe
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\bin\Debug\KiTTY Session Manager.pdb
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\bin\Debug\FileHelpers.dll
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\bin\Debug\FileHelpers.xml
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\obj\Debug\uk.org.riseley.puttySessionManager.control.options.FileZillaOptionsControl.resources
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\obj\Debug\uk.org.riseley.puttySessionManager.control.options.GeneralOptionsControl.resources
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\obj\Debug\uk.org.riseley.puttySessionManager.control.options.OptionsControl.resources
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\obj\Debug\uk.org.riseley.puttySessionManager.control.options.PageantOptionsControl.resources
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\obj\Debug\uk.org.riseley.puttySessionManager.control.options.TreeOptionsControl.resources
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\obj\Debug\uk.org.riseley.puttySessionManager.control.options.UpdateOptionsControl.resources
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\obj\Debug\uk.org.riseley.puttySessionManager.control.options.WinSCPOptionsControl.resources
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\obj\Debug\uk.org.riseley.puttySessionManager.control.options.SyncOptionsControl.resources
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\obj\Debug\uk.org.riseley.puttySessionManager.control.TableControl.resources
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\obj\Debug\uk.org.riseley.puttySessionManager.form.AboutBox.resources
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\obj\Debug\uk.org.riseley.puttySessionManager.form.ProgressDialog.resources
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\obj\Debug\uk.org.riseley.puttySessionManager.form.ExportDialog.resources
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\obj\Debug\uk.org.riseley.puttySessionManager.form.NewSessionForm.resources
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\obj\Debug\uk.org.riseley.puttySessionManager.form.ProxyAuthenticationForm.resources
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\obj\Debug\uk.org.riseley.puttySessionManager.form.SessionManagementForm.resources
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\obj\Debug\uk.org.riseley.puttySessionManager.form.SessionNameForm.resources
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\obj\Debug\uk.org.riseley.puttySessionManager.form.CopySessionForm.resources
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\obj\Debug\uk.org.riseley.puttySessionManager.form.HotkeyChooser.resources
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\obj\Debug\uk.org.riseley.puttySessionManager.form.FolderForm.resources
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\obj\Debug\uk.org.riseley.puttySessionManager.form.Options.resources
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\obj\Debug\uk.org.riseley.puttySessionManager.control.SessionControl.resources
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\obj\Debug\uk.org.riseley.puttySessionManager.form.SessionEditorForm.resources
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\obj\Debug\uk.org.riseley.puttySessionManager.control.SessionEditorControl.resources
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\obj\Debug\uk.org.riseley.puttySessionManager.control.SessionListControl.resources
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\obj\Debug\uk.org.riseley.puttySessionManager.form.SessionManagerForm.resources
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\obj\Debug\uk.org.riseley.puttySessionManager.form.SynchronizeForm.resources
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\obj\Debug\uk.org.riseley.puttySessionManager.form.UpdateForm.resources
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\obj\Debug\uk.org.riseley.puttySessionManager.Properties.Resources.resources
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\obj\Debug\uk.org.riseley.puttySessionManager.control.SessionTreeControl.resources
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\obj\Debug\PuTTY Session Manager.csproj.GenerateResource.Cache
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\obj\Debug\KiTTY Session Manager.exe
+C:\Users\Guillaume\Desktop\puttysm-code-182-tags-release\0.42 - Copie\PuTTYSessionManager\obj\Debug\KiTTY Session Manager.pdb

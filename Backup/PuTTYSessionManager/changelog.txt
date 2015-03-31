@@ -1,0 +1,275 @@
+PuTTY Session Manager v0.41 ( 02-08-2010 )
+=============================================
+Ninth release of PuTTY Session Manager
+
+Minor release with bugfixes and small enhancements
+
+Feature requests / enhancements:
+
+Not Tracked:  Added ALT as a hotkey modifier.
+
+Not Tracked:  Attempt to make Options dialog readable when using non standard DPI
+
+Not Tracked:  Added suppport for copy a list of hostnames to the clipboard.
+              This can either be done using the Export Session dialog
+              or by pressing CTRL-C in the tree view
+              
+Bugs:
+
+Not Tracked:  Fix to make sure processing renamed sessions in the sync session process
+			  cause the progress bar to increment.
+			  Make sure the default user name is copied when create new sessions as
+			  part of the sync process
+			  
+Not Tracked:  Added Try/Catch around browser launch when update link is clicked
+
+Not Tracked:  Make sure disabling transparency really does turn it off
+			  
+PuTTY Session Manager v0.40 ( 26-04-2009 )
+=============================================
+Eighth release of PuTTY Session Manager
+
+Feature requests / enhancements:
+
+1529194 : Implement synchronise sessions feature.  If you use the CSV export
+		  facility, you can now share your session list with others.  PSM can
+		  now parse the file and offer you the ability to review and sync changes.
+		  Support for reading the CSV file from an http url is included
+
+Not Tracked: Allow the application icon to be customised. If an icon file called 
+             "psm.ico" exists in the executable directory this will be used instead
+             of the default icon
+
+Not Tracked: Allow the DEL key to be used to delete sessions from the tree when 
+			 unlocked
+			 
+Not Tracked: Profiled the application and added some performance enhancements		 			              
+
+Bugs:
+2183658: Re-implemented all major controls and forms to use a proper layout 
+		 manager.  This should now make changing the font behave in a sensible
+		 fashion.
+
+1806695: Again(!). Re-implemented the architecture for saving settings, to allow
+		 you to cancel settings changes and really make sure all your settings are
+		 saved before the application exits.
+
+Not Tracked: Avoid unhandled exception if the About or Options dialogs are 
+             requested twice from the systray menu
+             
+Not Tracked: Attempt to re-register the hotkeys after the taskbar icon visibility
+             is changed, as hotkey registration appears to be lost.  Fixed for 
+             all but one scenario.   
+             
+Not Tracked: Support for non european codepages. Ensure that settings in the 
+			 registry are converted to the current codepage.
+
+
+
+PuTTY Session Manager v0.31 ( 29-06-2008 )
+=============================================
+Seventh release of PuTTY Session Manager
+
+This is mainly a bugfix release with a fair amount of code refactoring
+and some minor enhancements
+
+Feature requests / enhancements:
+1746714: More Session Hotkeys. Hotkey modifier can now be chosen to provide
+         support for Vista
+1915388: Expand on startup for the tree view.  Adds an option to allow the
+         tree view to be fully expanded on startup
+1882231: Add support for /ini option for launching WinSCP. Ini file location
+         can be specified in the options dialog
+1824160: Get .NET 2.0 error when launching PSM with corrupted prefs. PSM will 
+         now detect a corrupted prefs file and prompt you to delete the file
+         and relaunch PSM
+1931924: Implemented option to not show PSM in the taskbar         
+1934134: Implemented option to not confirm exiting
+1931925: Implemented option to hide icons from the tree view
+
+Not Tracked: Make PSM a single instance application - if you try to launch it
+             twice the existing window will be brought to the foreground                 
+Not Tracked: Add hostname column to session editor
+Not Tracked: Check the PuTTY executable is accessible on startup and prompt to 
+             select the location if it isn't
+Not Tracked: Use FileHelpers.dll for CSV export - this is a start for implementing
+             storage providers for sync session functionality and portable PuTTY
+             implementations. WIP.
+Not Tracked: Added option to make fonts for dialogs configurable             
+             
+Bugs:
+1927128: Special chars not recognized. Ensure that special characters in the
+         session name are handled properly ( i.e. the same way PuTTY handles them)
+1801589: Launch Session from Systray fails in list view.
+1806695: Attempt to make sure that settings are saved on logoff or shutdown. 
+         Ensure window size is saved on logoff.
+                
+Not Tracked: Ensure duplicate session names are identified when they have a space in them
+Not Tracked: Ensure external programs can be launched for sessions that have just
+             been renamed
+Not Tracked: Ensure that that moved folders have the correct path set. 
+Not Tracked: Ensure that new sessions can be exported with all the details.
+
+PuTTY Session Manager v0.30 ( 13-09-2007 )
+=============================================
+Sixth release of PuTTY Session Manager
+
+This is a significant release of PSM, which focuses on 
+enhancing usability.
+
+NOTE:  The version numbering for PSM changes in this release. 
+It now follows the format:
+
+MajorVersion.MinorVersion.SVNRevNo.BuildType
+
+MajorVersion=0  ( Until I complete the documentation - then I'll go to v1)
+MinorVersion=30 ( Two Digits to allow for tweaks )
+SVNRevNo=Svn Revision Number this is built from
+         0 - For exported sources
+BuildType=0 - Not Modified ( Reproducible build from SVN )
+         =Non-zero ( Development build )
+          - Modified, Switched or Mixed Revision Sources
+
+Feature requests / enhancements:
+1748080: Minimize on loss of focus.  Added an option to allow PSM
+         to automatically minimize to the system tray after a session
+         has been launched
+1748076: Pageant Integration.  Added a tab to the options dialog to 
+         enable the launch of Pageant from PSM.  A list of keys can be 
+         supplied , and Pageant can be automatically launched on startup
+         of PSM
+1744520: Expand all folders.  All child folders may now be expanded with
+         CTRL Right Arrow , and collapsed with CTRL Left arrow.
+         Also added context menu items to perform the same function. Changed
+         refresh session functionality to display tree expanded to one level
+         by default.
+1744518: Hit Enter to launch a session.  Implemented on tree and list view
+1746714: More Session Hotkeys.  You can now have up to 10 configurable 
+         session hotkeys.  Hotkeys may be indvidually enabled and disabled.
+1740798: Ability to launch third party progs like FileZilla or WinSCP
+         Added support for launching FileZilla or WinSCP session from the 
+         tree. 
+Not Tracked: Added New Session Menu item to PSM System Tray menu   
+Not Tracked: Add F2 shortcut to rename session or folder 
+Not Tracked: Added confirmation dialog for successful session export   
+Not Tracked: Make PSM respond to mimimize requests ( eg Win+M )
+Not Tracked: Add Tooltips to some Options , to provide a bit of help
+Not Tracked: Create Nant build script to make releases easier
+Not Tracked: Upgrade settings from one version of PSM to another ( so
+             you don't have to keep resetting everything after an upgrade )
+         
+Bugs:
+Not Tracked:  Create HKCU\Software\Microsoft\Windows\CurrentVersion\Run
+              if it doesn't exist and auto startup requested
+Not Tracked:  Finally fixed PSM so that if you select minimize on startup
+			  the tree no longer displays then hides, instead it just starts
+			  in the system tray
+
+PuTTY Session Manager v0.2.3.1 ( 19-06-2007 )
+=============================================
+Fifth release of PuTTY Session Manager
+
+This is a minor release of PSM with the following changes:
+
+Feature requests:
+1651011: Allow sort order of sessions and folders to be configured by 
+         the user
+1651897: Create csv session export.  You can now export 
+         Session Name,Folder Name,Username,Hostname
+         to csv file ( useful for scripting if you want to create a list
+         of boxes you have logons to ).  
+
+Bugs:
+Not Tracked:  New sessions ( with a space in their name )
+              weren't showing up in the system tray with a 
+              session refresh
+Not Tracked:  ArrayIndexOutOfBoundsException when trying to create 
+              a new session when no previous sessions exist
+Not Tracked:  Fix NRE on startup if you don't have access to 
+			  HKCU\Software\Microsoft\Windows\CurrentVersion\Run
+
+PuTTY Session Manager v0.2.2.1 ( 29-10-2006 )
+=============================================
+Fourth release of PuTTY Session Manager
+
+This is a minor release of PSM with the following changes:
+
+Feature requests:
+1557278: Add minimize window hotkey. The hotkey is configurable through
+         the options dialog. Pressing ESC when the focus is on the main
+         tree will also minimize the window.
+1551069: Check for update. You can now check for the latest version of
+         PSM from either the options window or the about box.  This 
+         feature supports HTTP proxy servers.  
+1561769: Allow installer to specify "all users" or "current user"
+         Fixed to create All Users icons if possible, otherwise 
+         reverts to current user icons      
+
+Bugs:         
+1563160: PSM crashes with NRE when empty key is stored in registry. This
+         had the effect of making PSM incompatible with TuTTY. Empty keys
+         (TuTTY folders) are now silently ignored
+1531431: Installer does not handle previous version of PSM running.
+         Fixed to kill any version of PSM that is running before installer
+         or uninstaller starts.       
+
+
+PuTTY Session Manager v0.2.1.1 ( 02-09-2006 )
+=============================================
+Third release of PuTTY Session Manager
+
+This is a minor release of PSM with the following changes:
+
+Feature requests:
+1550783: Add Session Manager option: minimize to tray on startup
+1550780: Session Manager should have option start with windows logon
+1529192: Improve code commenting
+		 This has only been partially done.
+1529179: Enable Create new folder on session folders
+1528624: Tooltips for sessions
+
+Bugs:
+1548086: Saved location may not restore when using dual monitors
+1530587: Drag n drop duplicate folder names does not refresh properly
+1530585: Delete sessions does not refresh the session list
+	
+I have also restructured the code although there is more to do!
+
+ 
+PuTTY Session Manager v0.2.0.1 ( 22-07-2006 )
+=============================================
+Second release of PuTTY Session Manager
+ - New Session Management features
+    - Session Editor
+		- Export Sessions to registry file
+		- Save New Session
+		- Delete Sessions
+		- Copy Session Attributes
+	- Session management from the tree view
+		- Export Sessions ( thanks to Roland Lammel for the idea )
+		- Save New Session
+		- Delete Sessions
+		- Rename Session
+		- Set session as hotkey
+			
+ - F5 Shortcut to refresh sessions
+ 
+ - Bug fixes
+	- Implement upwards scrolling on session drag 
+	  in tree view
+	- Allow for no sessions or no default session
+	- Performance enhancement for large number of sessions
+
+PuTTY Session Manager v0.1.0.1 ( 22-06-2006 )
+=============================================
+Initial release of PuTTY Session Manager
+ - Foldered Session Management
+ - Alternative session list 
+ - Session hotkeys
+ 
+ 
+================================================ 
+$Rev:: 166               $:  
+$Author:: dmrpsm         $:  
+$Date:: 2010-08-02 09:24#$:  
+================================================

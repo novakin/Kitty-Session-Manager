@@ -1,0 +1,238 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="uk.org.riseley.puttySessionManager.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="PuttyLocation" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Program Files\PuTTY\putty.exe</Value>
+    </Setting>
+    <Setting Name="TransparencyEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="TreeFont" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Tahoma, 8pt</Value>
+    </Setting>
+    <Setting Name="WindowSize" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">264, 545</Value>
+    </Setting>
+    <Setting Name="TransparencyValueDouble" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="TransparencyValueInt" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="Location" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="AlwaysOnTop" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DisplayTree" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="HotkeyNewEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="HotkeyFavouriteEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="FavouriteSession1" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FavouriteSession2" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FavouriteSession3" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FavouriteSession4" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FavouriteSession5" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SubfolderSessionWarning" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="MinimizeOnStart" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ToolTipsEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="HotkeyMinimizeEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="UpdateUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://puttysm.sourceforge.net/update.txt</Value>
+    </Setting>
+    <Setting Name="ProxyMode" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="ProxyServer" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ProxyPort" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DefaultUpdateUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://puttysm.sourceforge.net/update.txt</Value>
+    </Setting>
+    <Setting Name="SortOrder" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-1</Value>
+    </Setting>
+    <Setting Name="UpgradeRequired" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="FavouriteSession6" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FavouriteSession7" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FavouriteSession8" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FavouriteSession9" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FavouriteSession10" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Hotkey1Enabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Hotkey2Enabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Hotkey3Enabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Hotkey4Enabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Hotkey5Enabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Hotkey6Enabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Hotkey7Enabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Hotkey8Enabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Hotkey9Enabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Hotkey10Enabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="HotkeyNewSession" Type="System.Char" Scope="User">
+      <Value Profile="(Default)">N</Value>
+    </Setting>
+    <Setting Name="HotkeyMinimize" Type="System.Char" Scope="User">
+      <Value Profile="(Default)">Q</Value>
+    </Setting>
+    <Setting Name="HotkeySession1" Type="System.Char" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="HotkeySession2" Type="System.Char" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="HotkeySession3" Type="System.Char" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="HotkeySession4" Type="System.Char" Scope="User">
+      <Value Profile="(Default)">4</Value>
+    </Setting>
+    <Setting Name="HotkeySession5" Type="System.Char" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="HotkeySession6" Type="System.Char" Scope="User">
+      <Value Profile="(Default)">6</Value>
+    </Setting>
+    <Setting Name="HotkeySession7" Type="System.Char" Scope="User">
+      <Value Profile="(Default)">7</Value>
+    </Setting>
+    <Setting Name="HotkeySession8" Type="System.Char" Scope="User">
+      <Value Profile="(Default)">8</Value>
+    </Setting>
+    <Setting Name="HotkeySession9" Type="System.Char" Scope="User">
+      <Value Profile="(Default)">9</Value>
+    </Setting>
+    <Setting Name="HotkeySession10" Type="System.Char" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="PageantLocation" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Program Files\PuTTY\pageant.exe</Value>
+    </Setting>
+    <Setting Name="PageantKeyList" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&gt;</Value>
+    </Setting>
+    <Setting Name="LaunchPageantOnStart" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="MinimizeOnUse" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="FileZillaLocation" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Program Files\FileZilla\FileZilla.exe</Value>
+    </Setting>
+    <Setting Name="FileZillaEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="FileZillaAttemptKeyAuth" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="FileZillaProtocol" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="WinSCPEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="WinSCPLocation" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Program Files\WinSCP\WinSCP.exe</Value>
+    </Setting>
+    <Setting Name="WinSCPProtocol" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="WinSCPPrefProtocol" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="WinSCPVersion" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">4</Value>
+    </Setting>
+    <Setting Name="WinSCPIniLocation" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="WinSCPIniEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ExpandTreeOnStartup" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ShowInTaskbar" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="HotkeyModifier" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">8</Value>
+    </Setting>
+    <Setting Name="ConfirmExit" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DialogFont" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Tahoma, 8.25pt</Value>
+    </Setting>
+    <Setting Name="DisplayTreeIcons" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SessionSyncUrlLocation" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://</Value>
+    </Setting>
+    <Setting Name="SessionSyncFileLocation" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>

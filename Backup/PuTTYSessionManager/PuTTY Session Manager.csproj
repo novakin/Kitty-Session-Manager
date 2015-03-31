@@ -1,0 +1,461 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{043D06B2-54A0-40C6-AC44-BBCF30717E90}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>uk.org.riseley.puttySessionManager</RootNamespace>
+    <AssemblyName>KiTTY Session Manager</AssemblyName>
+    <StartupObject>uk.org.riseley.puttySessionManager.Program</StartupObject>
+    <ManifestCertificateThumbprint>4DEFC6AAB45740A83BF389C8D27134EEF9BBA34C</ManifestCertificateThumbprint>
+    <ManifestKeyFile>PuTTY Session Manager_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>false</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetZone>LocalIntranet</TargetZone>
+    <ApplicationIcon>icons\Putty.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>..\PSMInstaller\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Background</UpdateMode>
+    <UpdateInterval>1</UpdateInterval>
+    <UpdateIntervalUnits>Weeks</UpdateIntervalUnits>
+    <UpdatePeriodically>true</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>PuTTY Session Manager</ProductName>
+    <PublisherName>PuTTY</PublisherName>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>0.41.0.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FileHelpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=3e0c08d59cc3d657, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\FileHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="controller\CsvSessionImportImpl.cs" />
+    <Compile Include="controller\ISessionImport.cs" />
+    <Compile Include="controller\CsvSessionExportImpl.cs" />
+    <Compile Include="controller\SessionAttributesInterface.cs" />
+    <Compile Include="controller\RegistrySessionStorageImpl.cs" />
+    <Compile Include="controller\SessionAttributes.cs" />
+    <Compile Include="controller\ISessionExport.cs" />
+    <Compile Include="controller\ISessionStorage.cs" />
+    <Compile Include="control\options\FileZillaOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="control\options\FileZillaOptionsControl.Designer.cs">
+      <DependentUpon>FileZillaOptionsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="control\options\GeneralOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="control\options\GeneralOptionsControl.Designer.cs">
+      <DependentUpon>GeneralOptionsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="control\options\OptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="control\options\OptionsControl.Designer.cs">
+      <DependentUpon>OptionsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="control\options\PageantOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="control\options\PageantOptionsControl.Designer.cs">
+      <DependentUpon>PageantOptionsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="control\options\ResetableOptionsControl.cs" />
+    <Compile Include="control\options\TreeOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="control\options\TreeOptionsControl.Designer.cs">
+      <DependentUpon>TreeOptionsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="control\options\UpdateOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="control\options\UpdateOptionsControl.Designer.cs">
+      <DependentUpon>UpdateOptionsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="control\options\WinSCPOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="control\options\WinSCPOptionsControl.Designer.cs">
+      <DependentUpon>WinSCPOptionsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="control\SyncTableControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="control\SyncTableControl.Designer.cs">
+      <DependentUpon>SyncTableControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="control\options\SyncOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="control\options\SyncOptionsControl.Designer.cs">
+      <DependentUpon>SyncOptionsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="controller\HotkeyController.cs" />
+    <Compile Include="form\ProgressDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\ProgressDialog.Designer.cs">
+      <DependentUpon>ProgressDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\ExportDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\ExportDialog.Designer.cs">
+      <DependentUpon>ExportDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\SynchronizeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\SynchronizeForm.Designer.cs">
+      <DependentUpon>SynchronizeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\NewSessionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\NewSessionForm.Designer.cs">
+      <DependentUpon>NewSessionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\ProxyAuthenticationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\ProxyAuthenticationForm.Designer.cs">
+      <DependentUpon>ProxyAuthenticationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\SessionManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\SessionManagementForm.Designer.cs">
+      <DependentUpon>SessionManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\SessionNameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\SessionNameForm.Designer.cs">
+      <DependentUpon>SessionNameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\CopySessionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\CopySessionForm.Designer.cs">
+      <DependentUpon>CopySessionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\HotkeyChooser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\HotkeyChooser.Designer.cs">
+      <DependentUpon>HotkeyChooser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\FolderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\FolderForm.Designer.cs">
+      <DependentUpon>FolderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\UpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\UpdateForm.Designer.cs">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="model\eventargs\SyncSessionsRequestedEventArgs.cs" />
+    <Compile Include="model\eventargs\SyncSessionsLoadedEventArgs.cs" />
+    <Compile Include="model\HotkeyModifier.cs" />
+    <Compile Include="model\CopySessionRequest.cs" />
+    <Compile Include="model\CsvRecord.cs" />
+    <Compile Include="model\eventargs\ExportSessionEventArgs.cs" />
+    <Compile Include="model\NewSessionRequest.cs" />
+    <Compile Include="model\eventargs\RefreshSessionsEventArgs.cs" />
+    <Compile Include="model\eventargs\LaunchSessionEventArgs.cs" />
+    <Compile Include="model\Session.cs" />
+    <Compile Include="controller\SessionController.cs" />
+    <Compile Include="form\Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\Options.Designer.cs">
+      <DependentUpon>Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="model\SessionAction.cs" />
+    <Compile Include="model\SessionSorter.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="control\SessionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="control\SessionControl.Designer.cs">
+      <DependentUpon>SessionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\SessionEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\SessionEditorForm.Designer.cs">
+      <DependentUpon>SessionEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="control\SessionEditorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="control\SessionEditorControl.Designer.cs">
+      <DependentUpon>SessionEditorControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="control\SessionListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="control\SessionListControl.Designer.cs">
+      <DependentUpon>SessionListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\SessionManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\SessionManagerForm.Designer.cs">
+      <DependentUpon>SessionManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="control\options\FileZillaOptionsControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FileZillaOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="control\options\GeneralOptionsControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GeneralOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="control\options\OptionsControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="control\options\PageantOptionsControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PageantOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="control\options\TreeOptionsControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TreeOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="control\options\UpdateOptionsControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UpdateOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="control\options\WinSCPOptionsControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WinSCPOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="control\options\SyncOptionsControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SyncOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="control\SyncTableControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SyncTableControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\AboutBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\ProgressDialog.resx">
+      <DependentUpon>ProgressDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\ExportDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExportDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\NewSessionForm.resx">
+      <DependentUpon>NewSessionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\ProxyAuthenticationForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProxyAuthenticationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\SessionManagementForm.resx">
+      <DependentUpon>SessionManagementForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\SessionNameForm.resx">
+      <DependentUpon>SessionNameForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\CopySessionForm.resx">
+      <DependentUpon>CopySessionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\HotkeyChooser.resx">
+      <DependentUpon>HotkeyChooser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\FolderForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FolderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\Options.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Options.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="control\SessionControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SessionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\SessionEditorForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SessionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="control\SessionEditorControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SessionEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="control\SessionListControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SessionListControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\SessionManagerForm.resx">
+      <DependentUpon>SessionManagerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\SynchronizeForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SynchronizeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\UpdateForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="control\SessionTreeControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SessionTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <BaseApplicationManifest Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="psm.build" />
+    <Compile Include="control\SessionTreeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="control\SessionTreeControl.Designer.cs">
+      <DependentUpon>SessionTreeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="SingleInstanceManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="buildinfo\basever.txt" />
+    <Content Include="changelog.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FileHelpers-LGPL.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="gpl.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\Folder.gif" />
+    <Content Include="icons\Putty.gif" />
+    <Content Include="icons\Putty.ico" />
+    <Content Include="icons\SelectedFolder.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MSBee\MSBuildExtras.FX1_1.CSharp.targets" Condition=" '$(BuildingInsideVisualStudio)' == '' AND '$(TargetFX1_1)'=='true'" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
