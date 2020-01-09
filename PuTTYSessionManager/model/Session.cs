@@ -77,7 +77,7 @@ namespace uk.org.riseley.puttySessionManager.model
         public Session(string regKey, string folderName, bool isFolder)
         {
             SessionKey = regKey;
-            SessionDisplayText = convertSessionKeyToDisplay(regKey);
+            SessionDisplayText = System.Web.HttpUtility.UrlDecode(regKey, System.Text.Encoding.Default);
 
             if (folderName == null || folderName.Equals("") || folderName.Equals(SESSIONS_FOLDER_NAME))
             {
